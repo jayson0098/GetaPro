@@ -49,5 +49,9 @@ class User extends Model implements AuthenticatableContract,
     {
         return $this->belongsTo('App\Type');
     }
+    public function job_postings()
+    {
+        return $this->belongsToMany('App\Job');
+    }
 
 }
