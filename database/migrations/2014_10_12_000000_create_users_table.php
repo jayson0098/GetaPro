@@ -17,10 +17,10 @@ class CreateUsersTable extends Migration
             $table->string('firstname',225);
             $table->string('lastname',225);
             $table->longText('address');
-            $table->string('contact_number',225);
+            $table->string('phone',225);
             $table->string('email')->unique();
-            $table->string('verification_code',225);
-            $table->tinyInteger('is_verified')->nullable();
+            // $table->string('verification_code',225)->nullable();
+            // $table->tinyInteger('is_verified')->nullable();
             $table->string('password', 60);
             $table->integer('types_id')->unsigned()->index();
             $table->rememberToken();

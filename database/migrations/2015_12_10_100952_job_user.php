@@ -7,7 +7,7 @@ class JobUser extends Migration
 {
     /**
      * Run the migrations.
-     *
+     * This is a Pivot Migration.
      * @return void
      */
     public function up()
@@ -17,8 +17,14 @@ class JobUser extends Migration
             $table->integer('user_id')->index()->unsigned();
             $table->integer('job_id')->index()->unsigned();
 
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('job_id')->references('id')->on('jobs')->onDelete('cascade');
+            $table->foreign('user_id')
+                  ->references('id')
+                  ->on('users')
+                  ->onDelete('cascade');
+            $table->foreign('job_id')
+                  ->references('id')
+                  ->on('jobs')
+                  ->onDelete('cascade');
 
 
         });
