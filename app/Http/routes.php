@@ -11,10 +11,19 @@
 |
 */
 // Authentication routes...
-Route::get('/', 'Auth\AuthController@getLogin');
+Route::get('/','ComingSoonController@index');
+
+Route::post('/subscribe', function () {
+	// pass back some data, along with the original data, just to prove it was received
+   	$email = Input::get('uemail');
+
+    return json_encode($email);
+});
+/*Route::get('/', 'Auth\AuthController@getLogin');
 Route::post('/', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
 // Registration routes...
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
+*/

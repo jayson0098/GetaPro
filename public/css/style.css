@@ -1,0 +1,473 @@
+/*
+========= Place the UnderScoreS generated Text Description Here
+*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Font Face/ Google Font
+2.0 - Links
+3.0 - Accessibility
+4.0 - Alignments
+5.0 - Widgets
+5.1 - Header
+6.0 - Content
+	6.1 - Posts and pages
+	6.2 - Asides
+	6.3 - Comments
+7.0 - Infinite scroll
+8.0 - Media
+9.0 - Page Layout (Author Styles proceed here) <<<<
+10.0 - Misc
+11.0 - Media Queries
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+1.0 Font Face/ Google Font
+------------------------------------------------------------- */
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: BebasNeue-Book;
+    src: url(../fonts/BebasNeue-Book.ttf);
+}
+@font-face {
+    font-family: MYRIADPRO;
+    src: url(../fonts/MYRIADPRO-CONDIT.OTF.ttf);
+}
+@font-face {
+    font-family: SegoeUISemibold;
+    src: url(../fonts/SegoeUISemibold.ttf);
+}
+@font-face {
+    font-family: MYRIADPRO-REGULAR;
+    src: url(../fonts/MYRIADPRO-REGULAR.OTF);
+}
+
+/* Place your @import google font or font face here */
+
+
+
+/*--------------------------------------------------------------
+2.0 Links
+--------------------------------------------------------------*/
+a {
+	color: royalblue;
+}
+a:visited {
+	color: purple;
+}
+a:hover,
+a:focus,
+a:active {
+	color: midnightblue;
+}
+
+/*--------------------------------------------------------------
+3.0 Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+4.0 Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+5.0 Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+}
+
+/* Make sure select elements fit in widgets */
+.widget select {
+	max-width: 100%;
+}
+
+/* Search widget */
+.widget_search .search-submit {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+5.1 Header
+--------------------------------------------------------------*/
+
+.headerbg{
+    background:url(../images/header-background.jpg);
+    background-size:cover;
+}
+.headerlogo{
+    background: url(../images/main-logo.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    margin-top: 26px;
+
+}
+.companytitle{margin-left: -88px;}
+.companytitle h1 {
+    color: #fff;
+    padding-left: 0px !important;
+    padding-top: 22px;
+    font-family: BebasNeue;
+    font-size: 50px;
+}
+.tagline {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 50px;
+    font-family: BebasNeue;
+    font-size: 60px;
+    font-weight: 600;
+}
+.paragraph-container{padding-top: 75px;}
+.header-paragraph{
+    color:#fff;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    font-family: MYRIADPRO;
+}
+.coming-soon-text{
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    font-family: BebasNeue-Book;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+.subscribe-container{padding-top: 15px;margin-bottom: 190px;}
+.input-email{padding-left: 60px;padding-right: 0px;}
+.input-email input{height: 34px;width: 100%;}
+.submit-email{padding-left: 0px;}
+.submit-email input{height: 34px;width: 68%;font-family:SegoeUISemibold;background: #00aff0; padding-top: 0px;border: 0px;}
+/* all */
+::-webkit-input-placeholder { color:#d9d9d9; font-family: SegoeUISemibold; font-size: 14px; }
+::-moz-placeholder { color:#d9d9d9; font-family: SegoeUISemibold; font-size: 14px;} /* firefox 19+ */
+:-ms-input-placeholder { color:#d9d9d9; font-family: SegoeUISemibold; font-size: 14px;} /* ie */
+input:-moz-placeholder { color:#d9d9d9; font-family: SegoeUISemibold; font-size: 14px;}
+
+
+/*--------------------------------------------------------------
+6.0 Content
+--------------------------------------------------------------*/
+.center-content {
+    background-color: #00aff0;
+}
+.content-container{margin-bottom: 98px;}
+.introducing-text {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+    font-family: BebasNeue;
+}
+.content-logo img{height: 113px;}
+.content-title h4 {
+    text-transform: uppercase;
+    text-align: left;
+    color: #fff;
+    font-size: 100px;
+    font-family: BebasNeue;
+    margin-left: -62px;
+    margin-top: 0px;
+}
+.link-title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 26px;
+    font-family: BebasNeue;
+    font-weight: 600;
+}
+.link-description {
+    color: #fff;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    font-family: BebasNeue;
+    font-size: 15px;
+}
+.container-links {
+    padding-bottom: 90px;
+}
+.what-text {
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+    padding-top: 30px;
+    font-size: 60px;
+    font-family: BebasNeue;
+    font-weight: 600;
+}
+.ww-container {
+    padding-top: 48px;
+    text-align: center;
+    margin-bottom: 74px;
+}
+.what-where-description {
+    padding-top: 35px;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-left: 12px;
+    letter-spacing: 1px;
+    font-family: MYRIADPRO-REGULAR;
+    font-weight: 600;
+}
+.brain-image{height: 123px;}
+.our-team-container{
+background: #d4dadf;
+}
+.our-team-text{
+   text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+    padding-top: 30px;
+    font-size: 60px;
+    font-family: BebasNeue;
+    font-weight: 600;
+    margin-bottom: 76px;
+}
+.team-image {
+    height: 288px;
+}
+.team-title-ceo{
+    font-family: BebasNeue;
+    font-size: 52px;
+    padding-left: 101px;
+}
+.team-title-creative{
+    font-family: BebasNeue;
+    font-size: 52px;
+
+}
+.team-name {
+    font-family: MYRIADPRO-REGULAR;
+    font-size: 28px;
+    padding-left: 52px;
+}
+.team-title-web{
+    padding-left: 14px;
+    font-family: BebasNeue;
+    font-size: 52px;
+}
+.team-image-container {
+    padding-bottom: 76px;
+}
+/*--------------------------------------------------------------
+6.1 Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+}
+.hentry {
+	margin: 0 0 1.5em;
+}
+.byline,
+.updated {
+	display: none;
+}
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+6.2 Asides
+--------------------------------------------------------------*/
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+6.3 Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+}
+
+/*--------------------------------------------------------------
+7.0 Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .paging-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+8.0 Media
+--------------------------------------------------------------*/
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+.wp-caption {
+	border: 1px solid #ccc;
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 1.2% auto 0;
+	max-width: 98%;
+}
+.wp-caption-text {
+	text-align: center;
+}
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+.site-main .gallery {
+	margin-bottom: 1.5em;
+}
+.gallery-caption {
+}
+.site-main .gallery a img {
+	border: none;
+	height: auto;
+	max-width: 90%;
+}
+.site-main .gallery dd,
+.site-main .gallery figcaption {
+	margin: 0;
+}
+.site-main .gallery-columns-4 .gallery-item {
+}
+.site-main .gallery-columns-4 .gallery-item img {
+}
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+
+/*--------------------------------------------------------------
+9.0 Page Layout (Author Styles proceed here)
+--------------------------------------------------------------*/
+
+body {
+	/* Place your body style here */
+}
+
+
+.container {
+	max-width: 1170px;
+}
+
+
+/* This is for NON-Responsive Container ==
+.container {
+	max-width: none !important;
+	width: 1008px;
+}*/
+
+
+/* Navbar override styles here */
+
+
+
+/*--------------------------------------------------------------
+10.0 Misc - Place your modifier's here
+--------------------------------------------------------------*/
+.half-bottom {margin-bottom: 10px;}
+.half-top {margin-top: 10px;}
+.add-bottom {margin-bottom: 20px;}
+.add-top {margin-top: 20px;}
+
+.nodisplay {display: none;}
+
+
+/*--------------------------------------------------------------
+11.0 Media Queries
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 75em) {
+	/* width 1200px up */
+}
+
+
+@media only screen and (min-width: 62px) and (max-width: 75em) {
+	/* 992px and 1200px */
+}
+
+
+@media screen and (max-width: 61.938em) {
+	/* width: 991px; */
+}
+
+
+@media screen and (max-width: 48em) {
+	/* width 768px */
+}
+
+
+@media screen and (max-width: 30em) {
+	/* width 480px */
+}
