@@ -138,7 +138,7 @@ a:active {
 /*--------------------------------------------------------------
 5.1 Header
 --------------------------------------------------------------*/
-
+#err{padding-left: 60px;display: none;color:#ff0000}
 .headerbg{
     background:url(../images/header-background.jpg);
     background-size:cover;

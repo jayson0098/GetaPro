@@ -16,8 +16,9 @@ Route::get('/','ComingSoonController@index');
 Route::post('/subscribe', function () {
 	// pass back some data, along with the original data, just to prove it was received
    	$email = Input::get('uemail');
-
-    return json_encode($email);
+   	$sub = new App\Subscribe;
+   	$sub->email = $email;
+   	$sub->save();
 });
 /*Route::get('/', 'Auth\AuthController@getLogin');
 Route::post('/', 'Auth\AuthController@postLogin');

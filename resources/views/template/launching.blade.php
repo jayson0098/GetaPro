@@ -40,14 +40,35 @@
     });
 
     $('form').submit(function(e) {
-        e.preventDefault();
+      /*  e.preventDefault();
         var email = $('#user-email').val();
-        var formURL = $(this).attr("action");
+
 
         $.post(formURL, {uemail: email}, function(data) {
             console.log(data);
-        });
+        });*/
+       e.preventDefault();
+       $(this).hide();
+        var email = $('#user-email').val();
+        var formURL = $(this).attr("action");
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+        if(reg.test(email)==false){
+            $('#err').show();
+            $(this).show();
+            return false;
+        }else{
+            $('#err').show();
+            $('#err').html('please wait ...');
+             sendAjax(email,formURL);
+        }
     });
+
+    function sendAjax(email,formURL) {
+        $.post(formURL, {uemail: email}, function(data) {
+            console.log(data);
+        });
+
+    }
 
   });
   </script>
