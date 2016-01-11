@@ -65,7 +65,8 @@
 
     function sendAjax(email,formURL) {
         $.post(formURL, {uemail: email}, function(data) {
-            console.log(data);
+          $('#err').show();
+          $('#err').text(data);
         });
 
     }

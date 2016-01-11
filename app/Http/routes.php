@@ -19,6 +19,7 @@ Route::post('/subscribe', function () {
    	$sub = new App\Subscribe;
    	$sub->email = $email;
    	$sub->save();
+   	return 'Your email is added to our database, We will send updates later on';
 });
 /*Route::get('/', 'Auth\AuthController@getLogin');
 Route::post('/', 'Auth\AuthController@postLogin');

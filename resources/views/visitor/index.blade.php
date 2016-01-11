@@ -28,8 +28,8 @@
                         <div class="col-md-4 submit-email">
                         	{!! Form::submit('Subscribe',['class'=>''])!!}
                         </div>
-                         <p id="err">Please enter valid email address.</p>
                     {!! Form::close() !!}
+                     <p id="err">Please enter valid email address.</p>
                     </div>
                 </div>
             </div>
